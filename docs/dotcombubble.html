@@ -6,14 +6,215 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <title>Home</title>
+    <title>Dot Com Bubble</title>
+    <style>
+        body{
+            background-color: #f1e1dd;
+        }
+        .navbar-nav > li > .dropdown-menu { background-color: #f1e1dd; }
+        .navbar-brand{
+            color: #30475E;
+        }
+        .navbar {
+            background-color: transparent  !important;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            float: right;
+        }
+        .jumbotron {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+            height: 35vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity:80%
+        }
+        .jumbotron2{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+            height: 35vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 300px;
+            margin-left: 300px;
+            width: 930px;
+            border-radius: 5px;
+        }
+        .title{
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        .grid-container{
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 50px;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            margin-top: 30px;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        .text1{
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+        }
+        .grid-container2{
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 50px;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            margin-top: 30px;
+            margin-left: 300px;
+            margin-right: 300px;
+            border-radius: 10px;
+
+        }
+        .text1{
+            margin-right: 300px;
+            margin-left: 300px;
+        }
+        .text2{
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-top: 30px;
+
+        }
+        footer{
+            margin-top: 100px;
+        }
+        .text3{
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-top: 20px;
+        }
+        .row1{
+            margin-top: 30px;
+        }
+        .row2{
+            margin-top: 20px;
+        }
+        .grid-item3{
+            border-radius: 10px;
+
+        }
+
+
+
+
+    </style>
 </head>
 <body>
-<h1>Hello Testing</h1>
 <!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+<!-- Adding Navbar -->
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h3>TURKMEN</h3>
+        </a>
+    </nav>
+    <div class ="row no-gutters">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html"><b>ABOUT</b><span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>HISTORY OF THE INTERNET</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="browserwars.html">Browser Wars</a>
+                            <a class="dropdown-item" href="dotcombubble.html">Dot Com Bubble</a>
+                            <a class="dropdown-item" href="hiwcombined.html">Internet Search</a>
+                            <a class="dropdown-item" href="internet.html">People</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+<div class="jumbotron">
+</div>
+
+<div class="title">
+    <h1>DOT COM BUBBLE </h1>
+</div>
+
+<div class="text1">
+    <p><b>Jeff Bezos started off as an analyst working in Wall Street, but he would make lists of things that could possibly be sold using the internet (books would often top this list). Bezos was one of the first who believed the internet was a solution to sell items that couldn’t be sold any other way. For example, it is impossible for a bookstore to have over a million titles, but an internet store can definitely do this. Pierre Omidyar (founder of eBay) had a similar thought process: that the web was a way to do business, and not just goof around or search for information. Bezos was very methodical; he did market research, had a business plan, and used methodical analysis. In comparison, Omidyar was a software developer without a business plan and without market research; all he had was an idea of an online auction site.
+    </b></p>
+    <p><b>Pierre believed that an online auction site would be better than regular auctions because it was a marketplace where anyone could buy or sell. eBay enabled users to list items, obtain a list of all items that were for sale/auction, and bid on an item. After eBay launched, revenue came in from fees users paid to auction items. It took 4 years for the internet to gain 50 million users, which is explosive growth.</b></p>
+</div>
+
+
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="row1">
+            <p><b>There were certain technologies and laws that drove this explosive growth of people using the internet. The key technology was the silicon chip, a processor that was governed by Moore’s law. Moore’s Law was coined by Intel founder, Gordon Moore; it stated that the speed and power of integrated circuits (such as microprocessors and memory chips) will double every 18 months. This “doubling” allowed for exponential growth of power and speed from silicon chips. Because of doubling, transistors have grown smaller and smaller, causing computers to go from large desktops to smaller and faster laptops. The way a manufacturer etches the surface of a transistor and the materials that the transistors are components to condensing the size of the transistors. Moore’s law stems from the realization that when engineers innovated denser chips, they used these chips to make even denser chips. This is an autocatalytic (self-accelerating) process. Micro-processor engineers use Moore’s law as inspiration to make transistors small enough to provide the doubling effect.</b></p>
+        </div>
+    </div>
+    <div class="grid-item2">
+        <div class="footer-img">
+            <img src="https://images.unsplash.com/photo-1604605801370-3396f9bd9cf0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="" width="350" height="500">
+        </div>
+    </div>
+</div>
+
+<div class="grid-container2">
+    <div class="grid-item3">
+        <div class="footer-img2">
+            <img src="https://pyxis.nymag.com/v1/imgs/64c/5f5/aa7bad8c89acf39949cea29f2218bb8da5-26-jeff-bezos.rsquare.w700.jpg" alt="" width="250" height="250">
+        </div>
+    </div>
+    <div class="row2">
+    <p><b>Another essential law was Metcalfe’s Law. Metcalfe’s Law stated that every new node (a device such as a computer) that is added to the internet increases the internet’s value by a steep curve. It is the Moore’s Law of connectivity. For example: If there are 2 users in a network, there are 2 connections between a network; if there are 3 users in a network, there are 6 connections between a network. If there are 100 users in a network, then there are 5000 connections between a network. As the number of users increases, the usefulness of the internet increases. Both laws worked together in the late 1990’s to set the stage for a new financial bubble.</b></p>
+    </div>
+</div>
+<div class="text2">
+    <p><b>The Dot Com bubble started in 1995 when Netscape launched its successful IPO on the stock market. Then search engine companies such as Yahoo and Excite had IPO’s in 1996. Then Amazon had its IPO in 1997; this was significant because it was the first company with a website that was aimed at solely making business transactions using the internet. At the time, it was only an online bookstore. Many thought that Amazon would fail, since there was barely any net profit. This was because prices always dropped when they could to allow for more customers/users. Bezos’ strategy was to sacrifice profits to gain rapid growth of users. A big scale would allow Amazon to offer better experience to customers. Amazon had to convince users to give them their personal credit card information for purchases.</b></p>
+    <p><b>Public Key Cryptography also helped develop the dot com bubble by convincing Wall Street that transfer of credit card information was safe; therefore, the business model of sacrificing profits to amass a great consumer base was valid. Founded by Whitfield Diffie, Martin Hellman, and Ralph Merkle. The public key is used to encrypt the data that the sender wishes to send confidentially to the receiver. There is also such a thing as a “private key”. This is a combination used by the receiver to take the encrypted data that was sent, and decrypt it to produce the original message. In both of these cases, the messages being sent were about credit card information.</b></p>
+    <p><b>To circle back to eBay, Meg Whitman was hired by eBay in 1998 to help eBay gain financial support from Wall Street. eBay launched its IPO in September 1998; this was also another successful IPO that contributed to the dotcom bubble. Amazon was posting huge losses at the time of eBay’s IPO, but Wall Street’s Henry Blodget was certain that Amazon’s share price would double over time. Henry Blodget’s prediction caused a buying frenzy on Wall Street, which led to the doubling of Amazon’s share price in only a few weeks. This was the start of the manic dotcom bubble; people would flock to buy shares of any companies that had a “.com”.</b></p>
+    <p><b>As Jeff Bezos and Pierre Omidyar grew richer and more popular over their websites, other entrepreneurs aspired to do the same. There was a significant amount of such entrepreneurs that flocked to Silicon Valley, causing a sort of ‘gold rush’. The rise of day-trading (trading securities over the internet) helped democratize the stock market. Day-traders bought stocks in the morning and sold them in the afternoon. Gossip from internet chatrooms helped day-traders make their decisions on buying or selling shares. Venture capitalists would hedge their investments on e-commerce websites, knowing that some would eventually fail, because they knew at least once company would make them significant profit. Many e-commerce website companies were able to get funding easily. Money managers on Wall Street also wanted to take advantage of the dotcom bubble, so they would encourage people to buy shares of any e-commerce company. Wall Street money managers even encouraged people to buy shares in companies that they knew were going to fail. The internet boom had now turned into a speculative bubble because everyone was unsure what internet companies would fail and what internet companies would bring in immense profit.</b></p>
+    <p><b>Telecommunications was another financial mania that stemmed from the dotcom bubble. Companies were competing to have their fiberoptic cables cover as much ground as possible to give potential consumers a better bandwidth to access internet sites. Fiberoptic cable is either made from glass or plastic. Since the light that travels inside the fiberoptic wires only travels in a straight line, engineers coated the inside of the wire with mirrors to ensure that light travels in the right direction. The light in the fiberoptic wires was used as a sort of binary code for communication between devices. Fiberoptic cables can carry 10 billion pulses of digital information every second. The telecommunication firms were laying down too many fiberoptic wires; the spent too much money, and they built too much infrastructure.</b></p>
+</div>
+
+<div class="jumbotron2">
+</div>
+<div class="text3">
+    <p><b>In late 1999, eBay and Amazon were larger and more profitable than any other internet website companies. eBay was worth around $23 billion, which worried Meg Whitman because she didn’t think this could match the market capital. Amazon was earning $1.3 billion in revenue a year, valuating the company at $37 billion. Jeff Bezos was the Time magazine’s Man Of The Year for being a business icon. In February and March of 2000, the Federal Reserve signaled that the dotcom bubble was going to come to an end. On April 12, 2000 (the day labeled as “Black Friday”) the bubble crashed and the NASDAQ fell 355 points. In that week, the NASDAQ fell by 25%, which was the single greatest collapse in the history of the stock market. New York City’s attorney general blamed Wall Street for the crash of the dotcom bubble. Using the private emails that Henry Blodget sent (regarding companies that would fail, but people should buy shares in), the SEC charged him with civil securities fraud. He was banned from trading securities for life.</b></p>
+</div>
+
+
+
+
 
 </body>
 </html>
