@@ -6,14 +6,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Home</title>
+    <title>INTERNET</title>
+    <style>
+        body{
+            background-color: #f1e1dd;
+        }
+        .navbar-nav > li > .dropdown-menu { background-color: #f1e1dd; }
+        .navbar-brand{
+            color: #30475E;
+        }
+        .navbar {
+            background-color: transparent  !important;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            float: right;
+        }
+        .grid-container{
+            grid-row-gap: 30px;
+            grid-template-columns: auto auto auto;
+            margin-top: 50px;
+            margin-left: 130px;
+            grid-column-gap: 150px;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            margin-right: 140px;
+        }
+        .carousel-caption{
+            color: whitesmoke;
+            opacity: 90%;
+            font-family: "Iowan Old Style", sans-serif;
+        }
+        .carousel-item{
+            opacity: 80%;
+        }
+        .grid-item1{
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .column {
+            width: 50%;
+            padding: 10px;
+            column-gap: 40px;
+
+        }
+        .row:after {
+            display: table;
+
+        }
+        .btn-info{
+            background-color: transparent;
+            border-color: #30475E;
+            color: #30475E;
+            margin-top: 20px;
+            margin-left: 150px;
+            border-width: 3px;
+            font-family: "Iowan Old Style", sans-serif;
+        }
+        .btn-info:hover{
+            background-color: #424A5D;
+            color: whitesmoke;
+            border-color: #30475E;
+            transition: 0.5s ease;
+        }
+        .btn{
+            padding: 10px 30px;
+        }
+        .quote{
+            font-family: "Iowan Old Style", sans-serif;
+            color: #30475E;
+            margin-top: 100px;
+            margin-right: 200px;
+            padding-right: 30px;
+            margin-left: 30px;
+            padding-left: 50px;
+
+        }
+        .link1{
+            margin-left: 150px;
+            padding-left: 50px;
+            margin-top: 100px;
+
+        }
+        .link2{
+            margin-left: 160px;
+            padding-left: 70px;
+        }
+        .vl {
+            border-left: 3px solid #30475E;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            margin-top: 50px;
+        }
+        .quote2{
+            padding-left: 300px;
+        }
+
+
+
+
+    </style>
 </head>
 <body>
-<h1>Hello Testing</h1>
 <!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+
+<!-- Adding Navbar -->
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h3>TURKMEN</h3>
+        </a>
+    </nav>
+    <div class ="row no-gutters">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><b>HOME</b><span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="docs/about.html"><b>ABOUT</b><span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>HISTORY OF THE INTERNET</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="docs/browserwars.html">Browser Wars</a>
+                            <a class="dropdown-item" href="docs/dotcombubble.html">Dot Com Bubble</a>
+                            <a class="dropdown-item" href="docs/hiwcombined.html">Internet Search</a>
+                            <a class="dropdown-item" href="docs/internet.html">People</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
 </body>
+
+
+
+<div class="grid-container">
+    <div class="grid-item1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1949&q=80" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1><b>HOW THE INTERNET WORKS?</b></h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.pexels.com/photos/4200831/pexels-photo-4200831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1><b>BROWSER WARS</b></h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1><b>INVENTION OF THE INTERNET</b></h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1><b>DOT COM BUBBLE</b></h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1460794418188-1bb7dba2720d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1><b>PEOPLE</b></h1>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <div class="link1">
+            <a href="docs/browserwars.html" class="btn btn-info" role="button"><b>Start Learning</b></a>
+        </div>
+        <div class="link2">
+            <a href="docs/about.html" class="btn btn-info" role="button"><b>About</b></a>
+        </div>
+    </div>
+
+    <div class="vl"></div>
+
+    <div class="column" >
+        <div class="quote">
+            <h2><i>“The internt is becoming the town square for the global villiage of tomorrow.”</i></h2>
+            <div class="quote2"><h2><i>Bill Gates</i></h2></div>
+        </div>
+    </div>
+</div>
+
+
 </html>
