@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>INTERNET</title>
     <style>
@@ -12,9 +14,7 @@
             background-color: #f1e1dd;
         }
         .navbar-nav > li > .dropdown-menu { background-color: #f1e1dd; }
-        .navbar-brand{
-            color: #30475E;
-        }
+
         .navbar {
             background-color: transparent  !important;
             font-family: "Iowan Old Style" , sans-serif;
@@ -104,6 +104,30 @@
         .quote2{
             padding-left: 300px;
         }
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b9a9a6;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #30475E;
+        }
+
+        footer{
+            margin-top: 200px;
+        }
+        .p-4{
+            color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+        }
+        .bg-dark{
+            background-color: #b9a9a6 !important;
+            font-family: "Iowan Old Style" , sans-serif;
+        }
 
 
 
@@ -119,11 +143,6 @@
 
 <!-- Adding Navbar -->
 <div class="container-fluid">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>TURKMEN</h3>
-        </a>
-    </nav>
     <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -231,6 +250,42 @@
         </div>
     </div>
 </div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT ME</h5>
+                <p>
+                    If you have any questions or feedback about this webpage or the website content, please feel free to use the links on the right to contact this website's creator!
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ilayda Turkmen</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/ilaydaturkmen" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="http://www.linkedin.com/in/ilayda-turkmen-8532831b6" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">ILAYDA TURKMEN</a>
+    </div>
+</footer>
 
 
 </html>
