@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
     <title>Home</title>
     <style>
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4D30475E;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #30475E;
+        }
         body{
             background-color: #d8cac6;
         }
-        .navbar-nav > li > .dropdown-menu { background-color: #f1e1dd; }
-        .navbar-brand{
+        .navbar-light .navbar-brand{
             color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+            margin-top: 20px;
         }
         .navbar {
             background-color: transparent  !important;
@@ -262,18 +276,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!-- Adding Navbar -->
 <div class="container-fluid">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>TURKMEN</h3>
-        </a>
-    </nav>
+
     <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#"><b>TURKMEN</b></a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
@@ -282,13 +295,13 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <b>HISTORY OF THE INTERNET</b>
+                            <b>HIW-HOI</b>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="browserwars.html">Browser Wars</a>
                             <a class="dropdown-item" href="dotcombubble.html">Dot Com Bubble</a>
-                            <a class="dropdown-item" href="hiwcombined.html">Internet Search</a>
-                            <a class="dropdown-item" href="internet.html">People</a>
+                            <a class="dropdown-item" href="hiwcombined.html">How the Internet Works</a>
+                            <a class="dropdown-item" href="internet.html">Internet Search</a>
                         </div>
                     </li>
                 </ul>
@@ -296,6 +309,7 @@
         </nav>
     </div>
 </div>
+
 
 <div class="jumbotron">
 </div>
