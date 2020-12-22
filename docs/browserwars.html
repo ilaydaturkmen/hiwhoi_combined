@@ -7,19 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
     <title>Browser Wars</title>
     <style>
         body{
             background-color: #f1e1dd;
         }
-        .navbar-nav > li > .dropdown-menu { background-color: #f1e1dd; }
-        .navbar-brand{
+        .navbar-light .navbar-brand{
             color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+            margin-top: 20px;
+
         }
         .navbar {
             background-color: transparent  !important;
             font-family: "Iowan Old Style" , sans-serif;
             color: #30475E;
+            float: right;
+        }
+        .navbar li a{
+            color: #30475E !important;
             float: right;
         }
         .title2{
@@ -34,6 +41,84 @@
             margin-right: 200px;
             margin-left: 200px;
         }
+        .text4{
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+        }
+        footer{
+            margin-top: 50px;
+        }
+        .p-4{
+            color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+        }
+        .bg-dark{
+            background-color: #b9a9a6 !important;
+            font-family: "Iowan Old Style" , sans-serif;
+        }
+        .row > * {
+            margin-left: 70px;
+            margin-right: 30px;
+            padding-left: 70px;
+            padding-right: 30px;
+            margin-top: 30px;
+
+        }
+        .vertical {
+            border-left: 3px solid #30475E;
+            height: 130px;
+            position:absolute;
+            left: 55%
+        }
+        .footer-img{
+            opacity: 80%;
+        }
+        .grid-container{
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 50px;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            margin-top: 30px;
+        }
+
+
+        .grid-item{
+            margin-left: 40px;
+            padding-left: 40px;
+            padding-right: 20px;
+            margin-right: 20px;
+
+        }
+        .grid-item2{
+            margin-right: 70px;
+            padding-right: 70px;
+            margin-top: 30px;
+
+        }
+        .title{
+            text-align: center;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            padding-top: 20px;
+        }
+        .jumbotron{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+            height: 30vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1170px;
+            margin-right: 180px;
+            margin-left: 200px;
+            opacity: 80%;
+            padding-top: 30px;
+            margin-top: 20px;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -43,20 +128,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 
-<!-- Adding Navbar -->
 <div class="container-fluid">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>TURKMEN</h3>
-        </a>
-    </nav>
+
     <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#"><b>TURKMEN </b></a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
@@ -65,12 +148,13 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <b>HISTORY OF THE INTERNET</b>
+                            <b>HIW-HOI</b>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="browserwars.html">Browser Wars</a>
+                            <a class="dropdown-item" href="about.html">About</a>
                             <a class="dropdown-item" href="dotcombubble.html">Dot Com Bubble</a>
-                            <a class="dropdown-item" href="hiwcombined.html">Internet Search</a>
+                            <a class="dropdown-item" href="hiwcombined.html">How the Internet Works</a>
                             <a class="dropdown-item" href="internet.html">People</a>
                         </div>
                     </li>
@@ -79,9 +163,26 @@
         </nav>
     </div>
 </div>
+<div class="jumbotron"></div>
+<div class="title"><h1>Browser Wars</h1></div>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="row">
+            <p><b>The story of how the internet took over the world begins in University Of Illinois by students who were fascinated by the invention of the internet. In 1993, these students were fascinated by the World Wide Web. Back then, the web was very different. </b></p>
+            <p><b>The Internet was only for nerds. There wasn’t anything ordinary people could do on it. A computer science student from University of Illinois named Marc Andreessen imagined a future where people would use the web as a part of our daily life. He and his colleagues worked on making the web easier and more intuitive to use adding images, videos and audio capabilities. In the fall of 1993, the Illinois geek posted mosaics online and made it a freely downloadable gift to humanity. Jim Clark, a wealthy businessman, contacted Andreessen once he graduated from college working in Silicon Valley. They plotted how to turn mosaics into the bases of business ventures. They wanted their company to spread as Microsoft or other big companies. Bill Gates, cofounder and CEO of Microsoft didn’t grasp the insight that Mosaic would change the world. However, a group of young and ambitious kids were about to threaten his own Microsoft network. Mosaic and Microsoft regarded each other as competitors and this started a war between them.</b></p>
+            <p><b>In the summer of 1994, Jim Clark and his young web browser pioneer launched the fastest growing software company in the world. Bill Gates offered to work with Netscape together and even offered to buy it. But Netscape didn’t accept this order. Gates made a smart move that he sent out a memo to all Microsoft employees titled the internet tidal wave. This move made Microsoft declare themselves as the winner of the Browser Wars.</b></p></div>
+    </div>
+    <div class="grid-item2">
+        <div class="footer-img">
+            <img src="https://images.unsplash.com/photo-1583146191066-dd148554b72b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="" width="350" height="500">
+        </div>
+    </div>
+</div>
+
 
 <div class="title2">
-    <h1>INTERNET SEARCH</h1>
+    <h1>Internet Search</h1>
 </div>
 <div class="text1">
     <p><b>Jerry Yang and David Filo came across the idea for Yahoo while they were still in Stanford University. The idea came across their minds when they wanted a sneaky way to use the internet to win a Stanford fantasy basketball league. They needed to quickly access data from real games, but it was very difficult to find this data in a single site. Yahoo was originally called “Jerry and David’s Directory To The World Wide Web”. It was a directory to show new internet users where to find the information they were looking for. This is because when the internet first came out, it was just a bunch of random web pages with nothing to link them. It was a crude list of websites sorted by categories and sub-categories Jerry and David’s Directory To The World Wide Web was later renamed to “YAHOO!” when millions of users flocked to their directory/website Sequoia Capital was a venture capitalist firm that was partnered with Michael Moritz, who was interested in investing in Yahoo. However, Jerry Yang and David Filo did not have a business model to make any money.</b></p>
@@ -97,6 +198,45 @@
 <div class="text4">
     <p><b>Google had website links sorted by relevance on the left side of its page and had paid advertisements on the right side, creating a great user interface. On August 19, 2004, Google had its IPO on the NASDAQ stock market; this led Wall Street to criticize Google heavily and claimed it wouldn’t make money because the creators were arrogant and unforthcoming. However, Google’s IPO was a great success.</b></p>
 </div>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT ME</h5>
+                <p>
+                    If you have any questions or feedback about this webpage or the website content, please feel free to use the links on the right to contact this website's creator!
+                </p>
+            </div>
+            <div class = "vertical"></div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ilayda Turkmen</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/ilaydaturkmen" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="http://www.linkedin.com/in/ilayda-turkmen-8532831b6" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">ILAYDA TURKMEN</a>
+    </div>
+</footer>
 
 
 </body>
