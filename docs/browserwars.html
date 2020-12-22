@@ -1,126 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<title>Home</title>
+<script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
+<title>Browser Wars</title>
+<style>
+    body{
+        background-color: #f1e1dd;
+    }
+    .navbar {
+        background-color: transparent  !important;
+        font-family: "Iowan Old Style" , sans-serif;
+        color: #30475E;
+    }
+    .navbar li a{
+        color: #30475E !important;
+        float: right;
+    }
+    .title2{
+        font-family: "Iowan Old Style" , sans-serif;
+        color: #30475E;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;}
+    .text1, .text2, .text3, .text4{
+        font-family: "Iowan Old Style" , sans-serif;
+        color: #30475E;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    .text4{
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    .p-4{
+        color: #30475E;
+        font-family: "Iowan Old Style" , sans-serif;
+    }
+    .bg-dark{
+        background-color: #b9a9a6 !important;
+        font-family: "Iowan Old Style" , sans-serif;
+    }
+    .row > * {
+        margin-left: 70px;
+        margin-right: 30px;
+        padding-left: 70px;
+        padding-right: 30px;
+        margin-top: 20px;
 
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
-    <title>Browser Wars</title>
-    <style>
-        body{
-            background-color: #f1e1dd;
-        }
-        .navbar-light .navbar-brand{
-            color: #30475E;
-            font-family: "Iowan Old Style" , sans-serif;
-            margin-top: 20px;
-
-        }
-        .navbar {
-            background-color: transparent  !important;
-            font-family: "Iowan Old Style" , sans-serif;
-            color: #30475E;
-            float: right;
-        }
-        .navbar li a{
-            color: #30475E !important;
-            float: right;
-        }
-        .title2{
-            font-family: "Iowan Old Style" , sans-serif;
-            color: #30475E;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;}
-        .text1, .text2, .text3, .text4{
-            font-family: "Iowan Old Style" , sans-serif;
-            color: #30475E;
-            margin-right: 200px;
-            margin-left: 200px;
-        }
-        .text4{
-            margin-bottom: 40px;
-            padding-bottom: 40px;
-        }
-        footer{
-            margin-top: 50px;
-        }
-        .p-4{
-            color: #30475E;
-            font-family: "Iowan Old Style" , sans-serif;
-        }
-        .bg-dark{
-            background-color: #b9a9a6 !important;
-            font-family: "Iowan Old Style" , sans-serif;
-        }
-        .row > * {
-            margin-left: 70px;
-            margin-right: 30px;
-            padding-left: 70px;
-            padding-right: 30px;
-            margin-top: 30px;
-
-        }
-        .vertical {
-            border-left: 3px solid #30475E;
-            height: 130px;
-            position:absolute;
-            left: 55%
-        }
-        .footer-img{
-            opacity: 80%;
-        }
-        .grid-container{
-            display: grid;
-            grid-row-gap: 50px;
-            grid-template-columns: auto auto auto;
-            grid-column-gap: 50px;
-            font-family: "Iowan Old Style" , sans-serif;
-            color: #30475E;
-            margin-top: 30px;
-        }
+    }
+    .vertical {
+        border-left: 3px solid #30475E;
+        height: 130px;
+        position:absolute;
+        left: 55%
+    }
+    .footer-img{
+        opacity: 80%;
+    }
+    .grid-container{
+        display: grid;
+        grid-row-gap: 50px;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 50px;
+        font-family: "Iowan Old Style" , sans-serif;
+        color: #30475E;
+        margin-top: 30px;
+    }
 
 
-        .grid-item{
-            margin-left: 40px;
-            padding-left: 40px;
-            padding-right: 20px;
-            margin-right: 20px;
+    .grid-item{
+        margin-left: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+        margin-right: 20px;
 
-        }
-        .grid-item2{
-            margin-right: 70px;
-            padding-right: 70px;
-            margin-top: 30px;
+    }
+    .grid-item2{
+        margin-right: 70px;
+        padding-right: 70px;
+        margin-top: 30px;
 
-        }
-        .title{
-            text-align: center;
-            font-family: "Iowan Old Style" , sans-serif;
-            color: #30475E;
-            padding-top: 20px;
-        }
-        .jumbotron{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
-            height: 30vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 1170px;
-            margin-right: 180px;
-            margin-left: 200px;
-            opacity: 80%;
-            padding-top: 30px;
-            margin-top: 20px;
-        }
-
-
-
-    </style>
-</head>
+    }
+    .title{
+        text-align: center;
+        font-family: "Iowan Old Style" , sans-serif;
+        color: #30475E;
+        padding-top: 20px;
+    }
+    .jumbotron{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+        height: 30vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1170px;
+        margin-right: 180px;
+        margin-left: 200px;
+        opacity: 80%;
+        padding-top: 30px;
+        margin-top: 20px;
+    }
+</style>
 <body>
 <!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -135,9 +119,6 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="#"><b>TURKMEN </b></a>
-            </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
@@ -240,4 +221,3 @@
 
 
 </body>
-</html>
